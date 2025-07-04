@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>中欧班列运输通道分类</title>
+    <link href="/newmyWeb/css/all.css" rel="stylesheet" media="all" type="text/css" />
+    <style>
+        /* 通用样式 */
+        .transport-channel {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .channel-image {
+            width: 220px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            position: relative; /* 添加相对定位 */
+        }
+
+        .channel-image img {
+            max-width: 100%;
+            max-height: 100%;
+            transition: transform 0.5s ease; /* 添加过渡效果 */
+        }
+
+        .channel-image:hover img {
+            transform: rotateY(180deg); /* 鼠标悬停时绕Y轴旋转180度 */
+        }
+
+        .channel-text {
+            flex: 1;
+        }
+
+        .channel-title {
+            color: #333; /* 默认颜色 */
+            transition: color 0.3s ease; /* 过渡效果 */
+        }
+
+        .channel-title:hover {
+            color: #007BFF; /* 鼠标悬停时的颜色 */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="center">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="jieshao.html">基本介绍</a></li>
+            <li><a href="fazhan.html">发展历史</a></li>
+            <li><a href="fenlei.html">线路分类</a></li>
+            <li><a href="tupian.html">路线图片</a></li>
+            <li class="nav-btn-group">
+                <button id="loginBtn" class="nav-btn">登录</button>
+                <button id="registerBtn" class="nav-btn">注册</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="content center">
+        <div class="bar">
+            <h3>按运输通道分类</h3>
+        </div>
+
+        <div class="transport-channel">
+            <div class="channel-image">
+                <a href="west_channel.html"><img src="images/a1.jpg" alt="西通道"></a>
+            </div>
+            <div class="channel-text">
+                <a href="https://www.360kuai.com/pc/9c0df76fc90fcd16e?cota=3&kuai_so=1&sign=360_57c3bbd1&refer_scene=so_1" class="channel-title"><h3>西通道</h3></a>
+                <p>是目前中欧班列最主要的通道，承担着西南、西北、华中、华北、华东等地区的进出口货源运输任务。大约 70% 的中欧班列在该通道开行。从新疆阿拉山口或霍尔果斯口岸出境，经哈萨克斯坦与俄罗斯西伯利亚铁路相连，途经白俄罗斯、波兰、德国等，通达欧洲其他各国。像 “郑欧”“渝新欧”“汉新欧”“蓉欧”等班列都在此通道运行。此外，还有经哈萨克斯坦、土库曼斯坦、伊朗、土耳其等国，或跨里海进入阿塞拜疆、格鲁吉亚、保加利亚等国通达欧洲的线路，以及规划中从吐尔尕特（伊尔克什坦）出境，连接吉尔斯斯坦、乌兹别克斯坦等国通向欧洲的线路。</p>
+            </div>
+        </div>
+
+        <div class="transport-channel">
+            <div class="channel-image">
+                <a href="center_channel.html"><img src="images/a2.jpg" alt="中通道"></a>
+            </div>
+            <div class="channel-text">
+                <a href="https://k.sina.com.cn/article_2810373291_a782e4ab02002pjua.html" class="channel-title"><h3>中通道</h3></a>
+                <p>由内蒙古二连浩特口岸出境，途经蒙古国与俄罗斯西伯利亚铁路相连，进而通达欧洲各国。主要承载华北地区的货源运输，为中国与蒙古国、俄罗斯以及欧洲之间的贸易往来提供运输服务。</p>
+            </div>
+        </div>
+
+        <div class="transport-channel">
+            <div class="channel-image">
+                <a href="east_channel.html"><img src="images/a3.jpg" alt="东通道"></a>
+            </div>
+            <div class="channel-text">
+                <a href="https://www.gov.cn/yaowen/tupian/202506/content_7026167.htm" class="channel-title"><h3>东通道</h3></a>
+                <p>由内蒙古满洲里或黑龙江绥芬河口岸出境，接入俄罗斯西伯利亚铁路，抵达欧洲各国。截至 2024 年 8 月 20 日，该通道满洲里、绥芬河、同江铁路口岸开行以来，累计通行量突破 30000 列。通行线路达 27 条，可通达波兰、德国、荷兰等 14 个国家，联通中国长沙、郑州、成都、苏州等 60 余个城市，主要服务于东北地区及部分内陆城市与欧洲的贸易运输。</p>
+            </div>
+        </div>
+
+        <div class="transport-channel">
+            <div class="channel-image">
+                <a href="south_channel.html"><img src="images/a4.jpg" alt="南通道"></a>
+            </div>
+            <div class="channel-text">
+                <a href="https://finance.eastmoney.com/a/202503223352911367.html" class="channel-title"><h3>南通道（新兴线路）</h3></a>
+                <p>即中国 - 哈萨克斯坦 - 伊朗 - 土耳其 - 欧洲线路。该线路绕开里海和黑海，属于纯铁路运输，稳定性较好。虽然线路较长，但运输时效能压缩到 30 天内，近年来发展迅猛，成为中欧班列运输的新力量。</p>
+            </div>
+        </div>
+    </div>
+    <footer class="end">
+        <p>中欧班列-通道分类</p>
+    </footer>
+    <!-- 登录弹窗 -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="closeLogin">&times;</span>
+                <h2>登录</h2>
+            </div>
+            <form class="modal-form">
+                <label for="loginUsername">用户名</label>
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginPassword">密码</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+    <!-- 注册弹窗 -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="closeRegister">&times;</span>
+                <h2>注册</h2>
+            </div>
+            <form class="modal-form">
+                <label for="registerUsername">用户名</label>
+                <input type="text" id="registerUsername" name="username" required>
+                <label for="registerEmail">邮箱</label>
+                <input type="email" id="registerEmail" name="email" required>
+                <label for="registerPassword">密码</label>
+                <input type="password" id="registerPassword" name="password" required>
+                <button type="submit">注册</button>
+            </form>
+        </div>
+    </div>
+    <script src="/newmyWeb/js/New Js File.js"></script>
+</body>
+
+</html>

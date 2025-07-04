@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="/newmyWeb/css/all.css" rel="stylesheet" media="all" type="text/css" />
+    <title>中欧班列</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .turn-container {
+            width: 800px; /* 容器宽度 */
+            height: 600px; /* 容器高度 */
+            overflow: hidden; /* 隐藏超出部分 */
+            margin: 20px auto; /* 居中显示 */
+        }
+
+        .turn {
+            width: 100%;
+            height: 100%;
+            transition: transform 1s; /* 平滑过渡效果 */
+        }
+
+        .turn:hover {
+            transform: rotate(720deg) scale(1.5) skew(20deg); /* 翻转、变大、倾斜 */
+        }
+		
+        .bar {
+            margin: 20px;
+            margin-bottom: 5px;
+            text-align: center;
+            clear: both;
+            font-weight: bold;
+            padding: 14px 25px
+        }
+
+        /* 雨滴动画 */
+        @keyframes rain {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        .raindrop {
+            position: absolute;
+            top: -10px;
+            width: 2px;
+            height: 15px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 1px;
+            animation: rain 1s linear infinite;
+        }
+
+        .raindrop:nth-child(1) {
+            left: 10%;
+            animation-duration: 1.2s;
+            animation-delay: 0s;
+        }
+
+        .raindrop:nth-child(2) {
+            left: 20%;
+            animation-duration: 1.1s;
+            animation-delay: 0.1s;
+        }
+
+        .raindrop:nth-child(3) {
+            left: 30%;
+            animation-duration: 1s;
+            animation-delay: 0.2s;
+        }
+
+        .raindrop:nth-child(4) {
+            left: 40%;
+            animation-duration: 0.9s;
+            animation-delay: 0.3s;
+        }
+
+        .raindrop:nth-child(5) {
+            left: 50%;
+            animation-duration: 1.3s;
+            animation-delay: 0.4s;
+        }
+
+        .raindrop:nth-child(6) {
+            left: 60%;
+            animation-duration: 1.2s;
+            animation-delay: 0.5s;
+        }
+
+        .raindrop:nth-child(7) {
+            left: 70%;
+            animation-duration: 1.1s;
+            animation-delay: 0.6s;
+        }
+
+        .raindrop:nth-child(8) {
+            left: 80%;
+            animation-duration: 1s;
+            animation-delay: 0.7s;
+        }
+
+        .raindrop:nth-child(9) {
+            left: 90%;
+            animation-duration: 0.9s;
+            animation-delay: 0.8s;
+        }
+    </style>
+</head>
+<body onload="playMusic()">
+    <nav class="menu">
+        <ul class="center">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="jieshao.html">基本介绍</a></li>
+            <li><a href="fazhan.html">发展历史</a></li>
+            <li><a href="fenlei.html">线路分类</a></li>
+            <li><a href="tupian.html">路线图片</a></li>
+            <li class="nav-btn-group">
+                <button id="loginBtn" class="nav-btn">登录</button>
+                <button id="registerBtn" class="nav-btn">注册</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="banner"><img src="/newmyWeb/images/dong.gif" width="100%" /></div>
+    <div class="content center nmm">
+        <div class="bar">
+            <h3>中欧班列介绍<br>
+            </h3>
+        </div>
+        <div class="text">
+            <div class="nr">发展历程：<br>
+                起步阶段（2011-2013 年）：2011 年 3 月 19 日，首趟中欧班列 —— 重庆至德国杜伊斯堡的国际列车探索开行，开创了中欧班列的历史。2013
+                年，德国杜伊斯堡发车的国际列车顺利抵达重庆，实现了中欧回程国际列车 “零” 的突破，当年中欧班列全年共开行 80 列。<br>
+                快速发展阶段（2014-2018 年）：中欧班列发展迅猛，开行数量从 308 列升至 6363 列，回城车辆也显著增加，从 28 列增加到了 2667
+                列。中国开通中欧班列的城市数量逐年上涨，这些城市的中欧班列可以到达欧洲的 49 个城市，促进了中国对外贸易和对外开放。<br>
+                成熟阶段（2019 年至今）：2019 年以来，中欧班列继续保持快速发展态势，开行数量持续增长，线路不断优化，服务质量不断提升。2024 年，中欧班列年开行 1.9 万列，相较 2016 年的
+                1702 列增长 10.4 倍，年均增长率达 35%。截至 2025 年 6 月，中欧班列累计开行已突破 11 万列（含回程），发送货值超 4500 亿美元。<br>
+                线路分布：中欧班列在国内构建了西、中、东三条通道，在境外形成了北、中、南三线并行的局面。截至目前，我国境内已有 128 个城市开通了中欧班列，通达 26 个欧洲国家 229 个城市以及 11
+                个亚洲国家超 100 个城市。<br>
+                运输优势：<br>
+                时效稳定：按照固定车次、线路、班期和全程运行时刻开行，受天气等自然因素影响较小，能较好地保证货物运输的时效性。<br>
+                运量大：相较于公路运输等方式，中欧班列可承载大量货物，一列班列可运输数百个标准集装箱，能满足大规模货物运输需求。<br>
+                绿色环保：以电力为动力，相比公路运输中大量使用的燃油货车，二氧化碳等污染物排放大幅减少，符合绿色发展理念。<br>
+                运输货物品类：中欧班列运送的货物品类已拓展到包括汽车整车、机械设备、家具建材、服装鞋帽、电子产品等 53 1个门类、5 万多种商品。<br>
+                重要意义：中欧班列是共建 “一带一路” 的标志性品牌，是深化亚欧大陆开展务实合作的重要载体和推进 “一带一路”
+                建设的重要抓手。通过中欧班列，中国的家电、电子产品等运往中欧、中亚，同时乌兹别克斯坦葡萄干、意大利咖啡等优质食品，俄罗斯纸浆原料等也进入中国，促进了沿线国家的贸易往来和经济合作。<br>
+                <div class="turn-container">
+                    <img src="/newmyWeb/images/aa.jpg" class="turn">
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <footer class="end">
+        <p>中欧班列-基本介绍</p>
+    </footer>
+	<!-- 登录弹窗 -->
+	<div id="loginModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close" id="closeLogin">&times;</span>
+				<h2>登录</h2>
+			</div>
+			<form class="modal-form">
+				<label for="loginUsername">用户名</label>
+				<input type="text" id="loginUsername" name="username" required>
+				<label for="loginPassword">密码</label>
+				<input type="password" id="loginPassword" name="password" required>
+				<button type="submit">登录</button>
+			</form>
+		</div>
+	</div>
+	
+	<!-- 注册弹窗 -->
+	<div id="registerModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close" id="closeRegister">&times;</span>
+				<h2>注册</h2>
+			</div>
+			<form class="modal-form">
+				<label for="registerUsername">用户名</label>
+				<input type="text" id="registerUsername" name="username" required>
+				<label for="registerEmail">邮箱</label>
+				<input type="email" id="registerEmail" name="email" required>
+				<label for="registerPassword">密码</label>
+				<input type="password" id="registerPassword" name="password" required>
+				<button type="submit">注册</button>
+			</form>
+		</div>
+	</div>
+	
+    <!-- 雨滴 -->
+    <div class="raindrop"></div>
+    <div class="raindrop"></div>
+    <div class="raindrop"></div>
+    <div class="raindrop"></div>
+    <div class="raindrop"></div>
+    <div class="raindrop"></div>
+    <div class="raindrop"></div>
+    <div class="raindrop"></div>
+    <div class="raindrop"></div>
+    <script src="/newmyWeb/js/New Js File.js"></script>
+</body>
+</html>

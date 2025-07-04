@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="/newmyWeb/css/all.css" rel="stylesheet" media="all" type="text/css" />
+<title>中欧班列</title>
+<style>
+  /* 图片样式 */
+  .img li img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  .img li img:hover {
+    transform: scale(1.1);
+  }
+  .img li:nth-child(1) img {
+    border: 2px solid red;
+  }
+  .img li:nth-child(2) img {
+    border: 2px solid blue;
+  }
+  .img li:nth-child(3) img {
+    border: 2px solid green;
+  }
+  .img li:nth-child(4) img {
+    border: 2px solid yellow;
+  }
+  .img li:nth-child(5) img {
+    border: 2px solid purple;
+  }
+  .img li:nth-child(6) img {
+    border: 2px solid orange;
+  }
+  .img li:nth-child(7) img {
+    border: 2px solid cyan;
+  }
+  .img li:nth-child(8) img {
+    border: 2px solid magenta;
+  }
+
+  /* 视频样式 */
+  .video-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .video-container iframe {
+    width: 100%;
+    height: 315px;
+  }
+</style>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="center">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="jieshao.html">基本介绍</a></li>
+            <li><a href="fazhan.html">发展历史</a></li>
+            <li><a href="fenlei.html">线路分类</a></li>
+            <li><a href="tupian.html">路线图片</a></li>
+            <li class="nav-btn-group">
+                <button id="loginBtn" class="nav-btn">登录</button>
+                <button id="registerBtn" class="nav-btn">注册</button>
+            </li>
+        </ul>
+    </nav>
+<div class="banner"><img src="/newmyWeb/images/w1.png" width="100%" /></div>
+<div class="content center nmm">
+  <div class="text"></div>
+  <div class="clear"></div>
+  <div class="bar">
+    <h3>路线图片</h3>
+  </div>
+  <div class="img">
+    <ul>
+      <li> <img src="/newmyWeb/images/t1.jpg" class="pic1"> </li>
+      <li> <img src="/newmyWeb/images/t2.jpg" class="pic2"> </li>
+      <li> <img src="/newmyWeb/images/t3.jpg" class="pic3"> </li>
+      <li> <img src="/newmyWeb/images/t4.jpg" class="pic4"> </li>
+      <li> <img src="/newmyWeb//newmyWeb/images/t5.jpg" class="pic5"> </li>
+      <li> <img src="/newmyWeb/images/t6.jpg" class="pic6"> </li>
+      <li> <img src="/newmyWeb/images/t7.jpg" class="pic7"> </li>
+      <li> <img src="/newmyWeb/images/t8.jpg" class="pic8"> </li>
+    </ul>
+  <div class="clear"></div>
+  </div>
+  <div class="/newmyWeb/video-container">
+    <iframe src="https://www.bilibili.com/video/BV1td4y1d7F5?t=4.7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<footer class="end">
+  <p>中欧班列-路线图片</p>
+</footer>
+		<!-- 登录弹窗 -->
+		<div id="loginModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" id="closeLogin">&times;</span>
+					<h2>登录</h2>
+				</div>
+				<form class="modal-form">
+					<label for="loginUsername">用户名</label>
+					<input type="text" id="loginUsername" name="username" required>
+					<label for="loginPassword">密码</label>
+					<input type="password" id="loginPassword" name="password" required>
+					<button type="submit">登录</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- 注册弹窗 -->
+		<div id="registerModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" id="closeRegister">&times;</span>
+					<h2>注册</h2>
+				</div>
+				<form class="modal-form">
+					<label for="registerUsername">用户名</label>
+					<input type="text" id="registerUsername" name="username" required>
+					<label for="registerEmail">邮箱</label>
+					<input type="email" id="registerEmail" name="email" required>
+					<label for="registerPassword">密码</label>
+					<input type="password" id="registerPassword" name="password" required>
+					<button type="submit">注册</button>
+				</form>
+			</div>
+		</div>
+<script src="/newmyWeb/js/New Js File.js"></script>
+</body>
+</html>

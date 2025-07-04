@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="/newmyWeb/css/all.css" rel="stylesheet" media="all" type="text/css" />
+		<title>中欧班列发展历史</title>
+	</head>
+	<style>
+		body {
+			background-color: beige;
+		}
+
+		.bar {
+			margin: 20px;
+			margin-bottom: 5px;
+			text-align: center;
+			clear: both;
+			color: blueviolet;
+			font-weight: bold;
+			padding: 14px 25px
+		}
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			/* 半透明黑底让文字更清晰 */
+			color: white;
+			text-align: center;
+			vertical-align: middle;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			transition: opacity 0.5s ease;
+		}
+
+		.banner:hover .overlay {
+			opacity: 1;
+		}
+
+		/* 新增按钮样式 */
+		.additional-buttons {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.additional-buttons button {
+			margin: 5px;
+			padding: 10px 20px;
+			background-color: blueviolet;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.additional-buttons button a {
+			color: white;
+			text-decoration: none;
+		}
+	</style>
+	<body>
+		<nav class="menu">
+			<ul class="center">
+				<li><a href="index.html">网站首页</a></li>
+				<li><a href="jieshao.html">基本介绍</a></li>
+				<li><a href="fazhan.html">发展历史</a></li>
+				<li><a href="fenlei.html">线路分类</a></li>
+				<li><a href="tupian.html">路线图片</a></li>
+				<li class="nav-btn-group">
+					<button id="loginBtn" class="nav-btn">登录</button>
+					<button id="registerBtn" class="nav-btn">注册</button>
+				</li>
+			</ul>
+		</nav>
+		<div class="content center nmm">
+			<div class="bar">
+				<h3>中欧班列发展历史<br>
+				</h3>
+			</div>
+			<div class="text">
+				<div class="nr">
+					<div class="banner">
+						<img src="/newmyWeb/images/b1.jpg" width="100%" />
+						<div class="overlay">探索起步（2011 - 2013 年）</div>
+					</div>
+					<a href="step1.html">2011 年 3 月 19 日</a>，首趟中欧班列 —— 重庆至德国杜伊斯堡的国际列车成功开行，这一开创性的举措拉开了中欧班列发展的大幕。<br>
+					<a href="step1.html">2012 年</a>，“渝新欧”铁路低温运行实验取得突破，解决了电子产品在低温环境下运输的难题。<br>
+					<a href="step1.html">2013年</a>，德国杜伊斯堡发车的国际列车抵达重庆，实现了中欧回程国际列车 “零” 的突破。<br>
+					<br>
+					<div class="additional-buttons">
+						<button><a href="https://baike.baidu.com/item/%E4%B8%AD%E6%AC%A7%E7%8F%AD%E5%88%97/15832643#2-1">探索起步详情</a></button>
+					</div>
+					<div class="banner">
+						<img src="/newmyWeb/images/b2.jpg" width="100%" />
+						<div class="overlay">发展壮大（2014 -2018 年）</div>
+					</div>
+					<a href="step2.html">2014年</a>，中国铁路总公司编制了时速 120 公里中欧班列新运行图，开启了提速新征程。<br>
+					<a href="step2.html">2018年</a>，中欧班列开行数量从 308 列大幅跃升至 6363 列，回程班列数量也显著增加。<br>
+					<br>
+					<div class="additional-buttons">
+						<button><a href="https://www.gov.cn/xinwen/2015-01/20/content_2807147.htm">发展壮大详情</a></button>
+					</div>
+					<div class="banner">
+						<img src="/newmyWeb/images/b3.jpg" width="100%" />
+						<div class="overlay">成熟拓展（2019 年至今）</div>
+					</div>
+					<a href="step3.html">2019年</a>以来，中欧班列持续保持强劲的发展态势。<br>
+					<a href="step3.html">2024年</a>，中欧班列年开行 1.9 万列，相较 2016 年的 1702 列增长 10.4 倍。<br>
+				</div>
+			</div>
+			<!-- 新增按钮区域 -->
+			<div class="additional-buttons">
+				<button><a href="https://www.nra.gov.cn/xwzx/xwxx/xwlb/202411/t20241127_347421.shtml">成熟拓展详情</a></button>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<footer class="end">
+			<p>中欧班列-发展历史</p>
+		</footer>
+		<!-- 登录弹窗 -->
+		<div id="loginModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" id="closeLogin">&times;</span>
+					<h2>登录</h2>
+				</div>
+				<form class="modal-form">
+					<label for="loginUsername">用户名</label>
+					<input type="text" id="loginUsername" name="username" required>
+					<label for="loginPassword">密码</label>
+					<input type="password" id="loginPassword" name="password" required>
+					<button type="submit">登录</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- 注册弹窗 -->
+		<div id="registerModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" id="closeRegister">&times;</span>
+					<h2>注册</h2>
+				</div>
+				<form class="modal-form">
+					<label for="registerUsername">用户名</label>
+					<input type="text" id="registerUsername" name="username" required>
+					<label for="registerEmail">邮箱</label>
+					<input type="email" id="registerEmail" name="email" required>
+					<label for="registerPassword">密码</label>
+					<input type="password" id="registerPassword" name="password" required>
+					<button type="submit">注册</button>
+				</form>
+			</div>
+		</div>
+		<script src="/newmyWeb/js/New Js File.js"></script>
+	</body>
+</html>

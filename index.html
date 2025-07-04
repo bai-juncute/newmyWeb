@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<link href="/newmyWeb/css/all.css" rel="stylesheet" media="all" type="text/css" />
+		<title>中欧班列</title>
+		<style>
+			/* 轮播图样式 */
+			.slider {
+				position: relative;
+				width: 100%;
+				height: 400px;
+				overflow: hidden;
+			}
+
+			.slider img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				transition: opacity 1s ease-in-out;
+			}
+
+			.turn {
+				width: 350px;
+				height: 600px;
+				animation: turn 3s linear infinite;
+			}
+
+			.bar {
+				margin: 20px;
+				margin-bottom: 5px;
+				text-align: center;
+				clear: both;
+				color: blueviolet;
+				font-weight: bold;
+				padding: 14px 25px
+			}
+
+			.slider img.active {
+				opacity: 1;
+			}
+
+			/* 鼠标悬停旋转 */
+			.turn {
+				transition: transform 1s;
+			}
+
+			.turn:hover {
+				transform: rotate(720deg);
+			}
+
+			/* 鼠标悬停变圆 */
+			.img li img {
+				transition: border-radius 1s;
+			}
+
+			.img li img:hover {
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="menu">
+			<ul class="center">
+				<li><a href="index.html">网站首页</a></li>
+				<li><a href="jieshao.html">基本介绍</a></li>
+				<li><a href="fazhan.html">发展历史</a></li>
+				<li><a href="fenlei.html">线路分类</a></li>
+				<li><a href="tupian.html">路线图片</a></li>
+				<li class="nav-btn-group">
+					<button id="loginBtn" class="nav-btn">登录</button>
+					<button id="registerBtn" class="nav-btn">注册</button>
+				</li>
+			</ul>
+		</nav>
+		<div class="slider">
+			<!-- 轮播图图片，这里的图片路径需要根据实际情况修改 -->
+			<img src="/newmyWeb/images/slider1.png" class="active">
+			<img src="/newmyWeb/images/slider2.png">
+			<img src="/newmyWeb/images/slider3.png">
+		</div>
+		<div class="content center nmm">
+			<div class="bar">
+				<h3>中欧班列<br>
+					<small>连接中国与欧洲的重要物流通道</small>
+				</h3>
+			</div>
+			<div class="text">
+				<div class="le">
+					<img src="images/a.jpg" class="turn">
+				</div>
+				<div class="rs">
+					中欧班列是指按照固定车次、线路等条件开行，往来于中国与欧洲及一带一路沿线各国的集装箱国际铁路联运班列。中欧班列物流组织日趋成熟，班列沿途国家经贸交往日趋活跃，国家间铁路、口岸、海关等部门的合作日趋密切，这些有利条件，为铁路进一步发挥国际物流骨干作用，在“一带一路”战略中将丝绸之路从原先的“商贸路”变成产业和人口集聚的“经济带”起到重要作用。<br>
+					自2011年首列中欧班列（重庆 - 杜伊斯堡）成功开行以来，中欧班列逐渐发展壮大，截至目前，已经形成了西、中、东三条运输通道，通达欧洲20多个国家的100多个城市。<br>
+					中欧班列不仅为中国与欧洲之间的贸易往来提供了更加便捷、高效、安全的物流选择，也为促进“一带一路”沿线国家的经济合作和文化交流做出了重要贡献。<br>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="bar">
+				<h3>中欧班列图片</h3>
+			</div>
+			<div class="img">
+				<ul>
+					<li> <img src="/newmyWeb/images/a1.jpg"> </li>
+					<li> <img src="/newmyWeb/images/a2.jpg"> </li>
+					<li> <img src="/newmyWeb/images/a3.jpg"> </li>
+					<li> <img src="/newmyWeb/images/a4.jpg"> </li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<footer class="end">
+			<p>中欧班列-连接中国与欧洲</p>
+		</footer>
+
+		<!-- 登录弹窗 -->
+		<div id="loginModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" id="closeLogin">&times;</span>
+					<h2>登录</h2>
+				</div>
+				<form class="modal-form">
+					<label for="loginUsername">用户名</label>
+					<input type="text" id="loginUsername" name="username" required>
+					<label for="loginPassword">密码</label>
+					<input type="password" id="loginPassword" name="password" required>
+					<button type="submit">登录</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- 注册弹窗 -->
+		<div id="registerModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" id="closeRegister">&times;</span>
+					<h2>注册</h2>
+				</div>
+				<form class="modal-form">
+					<label for="registerUsername">用户名</label>
+					<input type="text" id="registerUsername" name="username" required>
+					<label for="registerEmail">邮箱</label>
+					<input type="email" id="registerEmail" name="email" required>
+					<label for="registerPassword">密码</label>
+					<input type="password" id="registerPassword" name="password" required>
+					<button type="submit">注册</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="/newmyWeb/js/New Js File.js"></script>
+	</body>
+
+</html>
